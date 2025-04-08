@@ -80,7 +80,7 @@ export function SignUp(){
 
     
             <span className="text-center">
-            Já tem uma conta? <a href="/" className="text-sm font-semibold text-gray-100 mt-10 mb-4 text-center hover:text-green-800 transition ease-linear">Login</a></span>
+            Já tem uma conta? <a href="/refund-frontend" className="text-sm font-semibold text-gray-100 mt-10 mb-4 text-center hover:text-green-800 transition ease-linear">Login</a></span>
             
         </form>
     )

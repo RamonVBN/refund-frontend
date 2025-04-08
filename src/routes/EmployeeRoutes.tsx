@@ -14,9 +14,9 @@ export function EmployeeRoutes(){
    return (<Routes>
 
 
-        <Route path="/" element={<AppLayout/>}>
-        <Route path="/" element={<Refund/>}/>
-        <Route path="/confirm" element={<Confirm/>}/>
+        <Route path="/refund-frontend" element={<AppLayout/>}>
+        <Route path="/refund-frontend" element={<Refund/>}/>
+        <Route path="/refund-frontend/confirm" element={<Confirm/>}/>
         </Route>
 
         <Route path="*" element={<NotFound/>}/>

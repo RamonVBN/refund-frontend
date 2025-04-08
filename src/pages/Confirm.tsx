@@ -20,6 +20,6 @@ export function Confirm(){
             Aguarde. Sua solicitação será analisada e, em breve o setor financeiro entrará em contato com você.
         </p>
 
-        <a className='w-full p-3 text-center bg-green-100 rounded-lg text-white hover:bg-green-200 transition ease-linear' href="/">Nova solicitação</a>
+        <a className='w-full p-3 text-center bg-green-100 rounded-lg text-white hover:bg-green-200 transition ease-linear' href="/refund-frontend">Nova solicitação</a>
     </div>
 }

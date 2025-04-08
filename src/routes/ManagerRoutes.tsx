@@ -15,10 +15,10 @@ export function ManagerRoutes(){
     return (
         <Routes>
 
-            <Route path="/" element={<AppLayout/>}>
+            <Route path="/refund-frontend" element={<AppLayout/>}>
 
-                <Route path="/" element={<DashBoard/>}/>
-                <Route path="/refund/:id" element={<Refund/>}/>
+                <Route path="/refund-frontend" element={<DashBoard/>}/>
+                <Route path="/refund-frontend/refund/:id" element={<Refund/>}/>
                 
             </Route>
 

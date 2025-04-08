@@ -12,10 +12,10 @@ export function AuthRoutes(){
     return (
         <Routes>
 
-            <Route path="/" element={<AuthLayout/>}>
+            <Route path="/refund-frontend" element={<AuthLayout/>}>
 
-            <Route path="/" element= {<SignIn/>}/>
-            <Route path="/signup" element= {<SignUp/>}/>
+            <Route path="/refund-frontend" element= {<SignIn/>}/>
+            <Route path="/refund-frontend/signup" element= {<SignUp/>}/>
             </Route>
 
             <Route path="*" element={<NotFound/>}/>
