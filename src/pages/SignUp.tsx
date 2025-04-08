@@ -28,7 +28,7 @@ export function SignUp(){
 
    async function onSubmit(e: React.FormEvent){
         e.preventDefault()
-        setIsLoading(true)
+        
         
         try {
             setIsLoading(true)
@@ -37,7 +37,7 @@ export function SignUp(){
 
             await api.post('/users', data)
 
-            if (confirm('Cadastrado com sucesso, Ir para tela de login?')) {
+            if (confirm('Cadastrado com sucesso. Ir para tela de login?')) {
                 navigate('/')
             }
 

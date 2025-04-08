@@ -1,4 +1,4 @@
-import React from 'react'
+
 import uploadSvg from '../assets/upload.svg'
 
 type Props = React.ComponentProps<'input'> & {
@@ -8,7 +8,7 @@ type Props = React.ComponentProps<'input'> & {
 export function Upload({filename = null, ...rest}: Props){
     return (
         <div>
-            <legend className='uppercase text-xxs text-gray-200 mb-2'>Comprovante</legend>
+            <legend className='uppercase text-xs text-gray-200 mb-2'>Comprovante</legend>
 
             <div className='w-full h-12 flex items-center rounded-lg border border-gray-300 text-sm text-gray-100 bg-transparent outline-none'>
                 <input type="file" id='upload' className='hidden' {...rest} />
