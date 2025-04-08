@@ -71,7 +71,7 @@ export function SignIn(){
             </Button>
 
             <span className="text-center">
-                Ainda não tem uma conta? <a href="/refund-frontend/signup" className="text-sm font-semibold text-gray-100 mt-10 mb-4 text-center hover:text-green-800 transition ease-linear">Cadastre-se</a></span>
+                Ainda não tem uma conta? <a href="https://ramonvbn.github.io/refund-frontend/signup" className="text-sm font-semibold text-gray-100 mt-10 mb-4 text-center hover:text-green-800 transition ease-linear">Cadastre-se</a></span>
             
         </form>
     )

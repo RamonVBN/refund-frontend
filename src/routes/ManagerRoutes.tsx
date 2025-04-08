@@ -15,10 +15,10 @@ export function ManagerRoutes(){
     return (
         <Routes>
 
-            <Route path="/refund-frontend" element={<AppLayout/>}>
+            <Route path="https://ramonvbn.github.io/refund-frontend/" element={<AppLayout/>}>
 
-                <Route path="/refund-frontend" element={<DashBoard/>}/>
-                <Route path="/refund-frontend/refund/:id" element={<Refund/>}/>
+                <Route path="https://ramonvbn.github.io/refund-frontend/" element={<DashBoard/>}/>
+                <Route path="https://ramonvbn.github.io/refund-frontend/refund/:id" element={<Refund/>}/>
                 
             </Route>
 

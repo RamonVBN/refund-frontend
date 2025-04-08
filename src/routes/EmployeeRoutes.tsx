@@ -14,9 +14,9 @@ export function EmployeeRoutes(){
    return (<Routes>
 
 
-        <Route path="/refund-frontend" element={<AppLayout/>}>
-        <Route path="/refund-frontend" element={<Refund/>}/>
-        <Route path="/refund-frontend/confirm" element={<Confirm/>}/>
+        <Route path="https://ramonvbn.github.io/refund-frontend/" element={<AppLayout/>}>
+        <Route path="https://ramonvbn.github.io/refund-frontend/" element={<Refund/>}/>
+        <Route path="https://ramonvbn.github.io/refund-frontend/confirm" element={<Confirm/>}/>
         </Route>
 
         <Route path="*" element={<NotFound/>}/>

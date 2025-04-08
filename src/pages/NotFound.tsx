@@ -7,7 +7,7 @@ export function NotFound() {
         <div className="w-screen h-screen flex justify-center items-center">
             <div className="flex flex-col">
             <h1 className="text-gray-100 font-semibold text-2xl mb-10">Ops! Essa página não existe... 😢 </h1>
-            <a className="font-semibold text-center text-green-100 hover:text-green-200 transition ease-linear" href="/refund-frontend">Voltar para o início</a>
+            <a className="font-semibold text-center text-green-100 hover:text-green-200 transition ease-linear" href="https://ramonvbn.github.io/refund-frontend/">Voltar para o início</a>
             </div>
         </div>
     )

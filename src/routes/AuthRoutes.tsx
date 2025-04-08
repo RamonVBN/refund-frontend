@@ -12,10 +12,10 @@ export function AuthRoutes(){
     return (
         <Routes>
 
-            <Route path="/refund-frontend" element={<AuthLayout/>}>
+            <Route path="https://ramonvbn.github.io/refund-frontend/" element={<AuthLayout/>}>
 
-            <Route path="/refund-frontend" element= {<SignIn/>}/>
-            <Route path="/refund-frontend/signup" element= {<SignUp/>}/>
+            <Route path="https://ramonvbn.github.io/refund-frontend/" element= {<SignIn/>}/>
+            <Route path="https://ramonvbn.github.io/refund-frontend/signup" element= {<SignUp/>}/>
             </Route>
 
             <Route path="*" element={<NotFound/>}/>
