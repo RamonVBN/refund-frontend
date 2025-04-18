@@ -1,5 +1,5 @@
 
-import { Navigate } from 'react-router'
+import { useNavigate } from 'react-router'
 import logoSvg from '../assets/logo.svg'
 
 import logoutSvg from '../assets/logout.svg'
@@ -9,11 +9,14 @@ import { useAuth } from '../hooks/useAuth'
 
 export function Header(){
 const auth = useAuth()
+const navigate = useNavigate()
 
     function navigation(){
+
+    navigate('/refund-frontend/') 
     auth.remove
 
-    return <Navigate to='/refund-frontend/'/>
+     
 }
     return (
         <header className='w-full flex justify-between'>
