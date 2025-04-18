@@ -36,7 +36,7 @@ export function AuthProvider({children}: {children: ReactNode})
       localStorage.removeItem(`${LOCAL_STORAGE_KEY}:user`)
       localStorage.removeItem(`${LOCAL_STORAGE_KEY}:token`)
 
-      window.location.assign('/')
+      window.location.assign('/refund-frontend/')
     }
 
     function loadUser(){
