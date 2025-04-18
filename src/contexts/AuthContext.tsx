@@ -1,7 +1,6 @@
 import { createContext, ReactNode, useState, useEffect } from "react";
 
 import { api } from "../sevices/api";
-import { Navigate} from "react-router";
 
 type AuthContext = {
   isLoading: boolean
@@ -38,7 +37,6 @@ export function AuthProvider({children}: {children: ReactNode})
       localStorage.removeItem(`${LOCAL_STORAGE_KEY}:token`)
 
       // window.location.assign('/refund-frontend/')
-      return <Navigate to='/refund-frontend/'/>
     }
 
     function loadUser(){
