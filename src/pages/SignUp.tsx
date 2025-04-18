@@ -3,7 +3,7 @@ import {z, ZodError} from 'zod'
 
 import { api } from "../sevices/api"
 
-import { useNavigate } from "react-router"
+import { NavLink, useNavigate } from "react-router"
 
 import { Input } from "../components/Input"
 import { Button } from "../components/Button"
@@ -80,7 +80,7 @@ export function SignUp(){
 
     
             <span className="text-center">
-            Já tem uma conta? <a href="/refund-frontend/" className="text-sm font-semibold text-gray-100 mt-10 mb-4 text-center hover:text-green-800 transition ease-linear">Login</a></span>
+            Já tem uma conta? <NavLink to="/refund-frontend/" className="text-sm font-semibold text-gray-100 mt-10 mb-4 text-center hover:text-green-800 transition ease-linear">Login</NavLink></span>
             
         </form>
     )

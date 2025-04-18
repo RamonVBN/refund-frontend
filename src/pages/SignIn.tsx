@@ -9,6 +9,7 @@ import { useAuth } from "../hooks/useAuth"
 import { Input } from "../components/Input"
 import { Button } from "../components/Button"
 import { AxiosError } from "axios"
+import { NavLink } from "react-router"
 
 const signInSchema = z.object({
     email: z.string().email({message: 'Email inválido'}),
@@ -71,7 +72,7 @@ export function SignIn(){
             </Button>
 
             <span className="text-center">
-                Ainda não tem uma conta? <a href="/refund-frontend/signup" className="text-sm font-semibold text-gray-100 mt-10 mb-4 text-center hover:text-green-800 transition ease-linear">Cadastre-se</a></span>
+                Ainda não tem uma conta? <NavLink to="/refund-frontend/signup" className="text-sm font-semibold text-gray-100 mt-10 mb-4 text-center hover:text-green-800 transition ease-linear">Cadastre-se</NavLink></span>
             
         </form>
     )
