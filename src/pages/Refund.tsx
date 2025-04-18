@@ -69,7 +69,7 @@ export function Refund(){
 
             await api.post('/refunds', {...data, filename: response.data.filename}) 
             
-            navigate('https://ramonvbn.github.io/refund-frontend/confirm', {state: {fromSubmit: true}})
+            navigate('/refund-frontend/confirm', {state: {fromSubmit: true}})
         } catch (error) {
             console.log(error)
 

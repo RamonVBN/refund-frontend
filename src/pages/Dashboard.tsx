@@ -106,7 +106,7 @@ export function DashBoard(){
 
             {
                     refunds.map((item) => (
-                    <RefundItem onClick={() => navigate(`https://ramonvbn.github.io/refund-frontend/refund/${item.id}`)} key={item.id} data={item}
+                    <RefundItem onClick={() => navigate(`/refund-frontend/refund/${item.id}`)} key={item.id} data={item}
                       ></RefundItem>))
                 }
 
