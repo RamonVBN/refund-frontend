@@ -22,6 +22,8 @@ export function AuthProvider({children}: {children: ReactNode})
 
     const [isLoading, setIsLoading] = useState(true)
 
+
+
     function save(data: UserApiResponse){
       localStorage.setItem(`${LOCAL_STORAGE_KEY}:user`, JSON.stringify(data.userWithoutPassword) )
       localStorage.setItem(`${LOCAL_STORAGE_KEY}:token`, data.token)
@@ -36,7 +38,9 @@ export function AuthProvider({children}: {children: ReactNode})
       localStorage.removeItem(`${LOCAL_STORAGE_KEY}:user`)
       localStorage.removeItem(`${LOCAL_STORAGE_KEY}:token`)
 
-      // window.location.assign('/refund-frontend/')
+      window.location.assign('/refund-frontend/')
+      
+      // return <Navigate to={'/refund-frontend/'}/>
     }
 
     function loadUser(){
