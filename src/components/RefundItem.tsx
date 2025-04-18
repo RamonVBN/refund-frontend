@@ -1,3 +1,4 @@
+import { NavLink } from "react-router"
 
 export type RefundItemProps = {
     id: string
@@ -7,15 +8,15 @@ export type RefundItemProps = {
     categoryImg: string
 }
 
-type Props = React.ComponentProps<'a'> & {
+type Props = {
     data: RefundItemProps
 }
 
-export function RefundItem({data, href, ...rest}: Props){
+export function RefundItem({data, ...rest}: Props){
 
     return (
-        <a className="flex items-center gap-3 hover:bg-green-100/5 cursor-pointer rounded-md p-2" 
-         {...rest} href="">
+        <NavLink to={`/refund-frontend/refund/${data.id}`} className="flex items-center gap-3 hover:bg-green-100/5 cursor-pointer rounded-md p-2" 
+         {...rest}>
            <img className="w-8 h-8" src={data.categoryImg} alt="Ícone da categoria" />
 
 
@@ -29,6 +30,6 @@ export function RefundItem({data, href, ...rest}: Props){
                 {data.amount}
             </span>
 
-        </a>
+        </NavLink>
     )
 }

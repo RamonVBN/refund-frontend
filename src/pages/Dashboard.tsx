@@ -4,7 +4,8 @@ import { RefundItem, RefundItemProps } from "../components/RefundItem"
 import { Pagination } from "../components/Pagination"
 
 import React, { useState, useEffect } from "react"
-import { useNavigate } from "react-router"
+
+// import { useNavigate } from "react-router"
 
 import searchSvg from '../assets/search.svg'
 import { CATEGORIES } from "../utils/categories"
@@ -19,7 +20,7 @@ import { AxiosError } from "axios"
 const PER_PAGE = 5
 
 export function DashBoard(){
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const [name, setName] = useState('')
 
@@ -105,9 +106,13 @@ export function DashBoard(){
             <div className="my-6 flex flex-col gap-4 max-h-[342px] overflow-y-scroll">
 
             {
-                    refunds.map((item) => (
-                    <RefundItem onClick={() => navigate(`/refund-frontend/refund/${item.id}`)} key={item.id} data={item}
-                      ></RefundItem>))
+                    // refunds.map((item) => (
+                    // <RefundItem onClick={() => navigate(`/refund-frontend/refund/${item.id}`)} key={item.id} data={item}
+                    //   ></RefundItem>))
+
+                      refunds.map((item) => (
+                        <RefundItem key={item.id} data={item}
+                          ></RefundItem>))
                 }
 
             </div>
