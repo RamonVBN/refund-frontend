@@ -13,8 +13,8 @@ const navigate = useNavigate()
 
     function navigation(){
 
-    navigate('/refund-frontend/') 
     auth.remove
+    navigate('/refund-frontend/') 
 
      
 }
